@@ -29,12 +29,15 @@ Run the following command in the [Azure Cloud Shell](https://shell.azure.com) or
 az ad sp create-for-rbac --name "github-deploy" --role contributor \
   --scopes /subscriptions/<your-subscription-id> \
   --sdk-auth
+```
 ## 📄 GitHub Actions Workflow File
 
 The following is the CI/CD pipeline configuration defined in `.github/workflows/deploy.yml`:
 
 ```yaml
 .github/workflows/deploy.yml
+```
+```bash
 
 name: Deploy to Azure Web App
 
